@@ -1,0 +1,329 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #14213D;
+  --tertiary-color: #FCA311;
+  --quaternary-color: #E5E5E5;
+  --quinary-color: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+  background: var(--quarternary-color);
+}
+
+/* Header */
+header {
+  background: var(--primary-color);
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--quinary-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--quinary-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: var(--tertiary-color);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+header nav .bi {
+  font-size: 2.5rem;
+  color: var(--tertiary-color);
+  transition: all 0.3s ease;
+  display: none;
+}
+
+/* Main */
+
+main .banner {
+  background: var(--secondary-color);
+  padding: 6rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .banner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--quinary-color);
+  margin-bottom: 20px;
+}
+
+main .banner p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 6rem;
+  text-align: center;
+  color: var(--quinary-color);
+  margin-bottom: 20px;
+}
+
+main .banner a {
+  text-decoration: none;
+  color: var(--quinary-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: var(--tertiary-color);
+  transition: all 0.3s ease;
+}
+
+main .banner a:hover {
+  background: var(--quaternary-color);
+  color: var(--primary-color);
+}
+
+main .banner img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  margin: 2rem auto 4rem;
+  padding: 0 6rem;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+main .banner img:hover {
+  opacity: 1;
+  padding: 0 5rem;
+  height: 620px;
+}
+
+main .banner .menu h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main .banner .menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  list-style: none;
+  margin: 2rem 0;
+}
+
+main .banner .menu ul li {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+main .banner .menu ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 100%;
+}
+
+main .banner .menu ul li a:hover {
+  color: var(--tertiary-color);
+}
+
+/* Information */
+.information {
+  padding: 20px 0;
+  margin: 6rem 0 0;
+}
+
+.information h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.information p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 6rem;
+}
+
+/* Costumer Reviews */
+.costumer-reviews {
+  padding: 20px 0;
+  margin: 6rem 0 0;
+}
+
+.costumer-reviews h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.costumer-reviews .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.costumer-reviews .container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  margin: 0 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.costumer-reviews .container .card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.costumer-reviews .container .card p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+/* Yummy Goodies */
+.video {
+  padding: 20px 0;
+  margin: 6rem 0 0;
+}
+
+.video h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 500px;
+  padding: 0 4rem;
+}
+
+/* Location */
+.location {
+  padding: 6rem 0;
+  margin: 6rem 0 0;
+  border-top: 1px solid var(--quaternary-color);
+}
+
+.location h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.location .location-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem 6rem;
+  padding: 4rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.location .location-container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.location .location-container iframe {
+  border-radius: 10px;
+}
+
+.location .location-container .location-information {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background: var(--primary-color);
+  color: var(--quinary-color);
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}

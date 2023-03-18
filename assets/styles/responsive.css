@@ -1,0 +1,217 @@
+/* Responsive */
+
+/* Responsive Web max width 1200px */
+@media screen and (max-width: 1200px) {
+  main .banner img {
+    height: auto;
+  }
+
+  .costumer-reviews .container .card {
+    margin: 0 1rem;
+  }
+
+  .costumer-reviews .container .card p {
+    padding: 1rem;
+  }
+
+  .video iframe {
+    height: 400px;
+  }
+
+  .location .location-container {
+    flex-direction: column;
+  }
+
+  .location .location-container iframe {
+    width: 100%;
+    height: 300px;
+    padding: 0 2rem;
+  }
+
+  .location .location-container .location-information {
+    margin: 2rem;
+  }
+}
+
+/* Responsive Web max width 760 */
+@media screen and (max-width: 760px) {
+  header nav ul {
+    display: none;
+  }
+
+  header nav .bi {
+    display: block;
+  }
+
+  main .banner h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  main .banner .menu ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .costumer-reviews .container {
+    flex-direction: column;
+  }
+
+  .costumer-reviews .container .card {
+    margin: 1.5rem;
+  }
+
+  .costumer-reviews .container .card p {
+    padding: 0.5rem;
+  }
+
+  .video iframe {
+    height: 300px;
+  }
+
+  .location .location-container iframe {
+    height: 200px;
+  }
+}
+
+/* Responsive Web max width 480 */
+@media screen and (max-width: 480px) {
+  main .banner h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  main .banner p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    padding: 0 2rem;
+  }
+
+  main .banner .menu ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .costumer-reviews .container {
+    flex-direction: column;
+  }
+
+  .costumer-reviews .container .card {
+    margin: 0.5rem;
+  }
+
+  .costumer-reviews .container .card p {
+    padding: 0.5rem;
+  }
+
+  .video iframe {
+    height: 200px;
+  }
+
+  .location .location-container iframe {
+    height: 100px;
+  }
+}
+
+/* Responsive Web max width 320 */
+@media screen and (max-width: 320px) {
+  main .banner h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  main .banner p {
+    font-size: 0.75rem;
+    text-transform: lowercase;
+    padding: 0 2rem;
+  }
+
+  main .banner img {
+    padding: 0 2rem;
+  }
+
+  main .banner .menu h2 {
+    font-size: 1.5rem;
+  }
+
+  main .banner .menu ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main .banner .menu ul li {
+    padding: 0.5rem;
+  }
+
+  .information {
+    padding: 2rem 0;
+    margin: 1rem 0 0;
+  }
+
+  .information h2 {
+    font-size: 1.5rem;
+  }
+
+  .information p {
+    padding: 0 2rem;
+    max-height: 300px;
+    overflow: auto;
+    font-size: 0.75rem;
+  }
+
+  .costumer-reviews {
+    padding: 2rem 0;
+    margin: 1rem 0 0;
+  }
+
+  .costumer-reviews h2 {
+    font-size: 1.5rem;
+  }
+
+  .costumer-reviews .container {
+    flex-direction: column;
+  }
+
+  .costumer-reviews .container .card {
+    margin: 0.5rem;
+  }
+
+  .costumer-reviews .container .card p {
+    padding: 0.5rem;
+  }
+
+  .video {
+    padding: 2rem 0;
+    margin: 1rem 0 0;
+  }
+
+  .video h2 {
+    font-size: 1.5rem;
+  }
+
+  .video iframe {
+    height: 100px;
+  }
+
+  .location {
+    padding: 2rem 0;
+    margin: 1rem 0 0;
+  }
+
+  .location h2 {
+    font-size: 1.5rem;
+  }
+
+  .location .location-container {
+    flex-direction: column;
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+
+  .location .location-container iframe {
+    height: 9rem;
+  }
+
+  .location .location-container .location-information {
+    padding: 0 1rem;
+  }
+}
